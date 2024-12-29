@@ -11,13 +11,13 @@
 2. [🕵🏻‍♀️ Forensics](#forensics)
    - [Unwanted Meow](#forensics-unwanted-meow)
    - [I Can’t Manipulate People](#forensics-i-cant-manipulate-people)
-3. [Cryptography](#cryptography)
-   - [Rick's Algorithm](#ricks-algorithm)
-   - [Credentials](#credentials)
-4. [🧩 Miscellaneous](#miscellaneous)
+3. [🧩 Miscellaneous](#miscellaneous)
    - [The DCM Meta](#misc-the-dcm-meta)
    - [Christmas GIFt](#misc-christmas-gift)
    - [Invisible Ink](#misc-invisible-ink)
+4. [Cryptography](#cryptography)
+   - [Rick's Algorithm](#ricks-algorithm)
+   - [Credentials](#credentials)
 
 ---
 
@@ -165,7 +165,7 @@ We were provided with a file that seemed to be a **corrupted JPEG**. Here’s ho
 
 ---
 
-### Forensics: I Can't Manipulate People
+### [Forensics] I Can't Manipulate People
 
 ## 📚 Overview
 
@@ -194,7 +194,7 @@ We were given a **PCAP file** containing multiple ping echo packets. Here's how 
 
 ---
 
-### Misc: The DCM Meta
+### [Misc] The DCM Meta
 
 ## 📚 Overview
 
@@ -222,7 +222,7 @@ This challenge involved working with a **DCM file**. Here’s how we solved it:
 
 ---
 
-### Misc: Christmas GIFt
+### [Misc] Christmas GIFt
 
 ## 📚 Overview
 
@@ -251,7 +251,7 @@ This challenge involved analyzing a **GIF file** to extract the hidden flag. Her
 
 ---
 
-### Misc: Invisible Ink
+### [Misc:] Invisible Ink
 
 ## 📚 Overview
 
