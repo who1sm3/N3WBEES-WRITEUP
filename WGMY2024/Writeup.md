@@ -108,9 +108,9 @@ else:
 
 ## 📚 Overview
 
-> *"When Thanos snapped his fingers, half of the flag was blipped. We need the Avengers to retrieve the other half. There's no flag in the movie, but there is a slash flag on the server (Please do not perform any brute forcing, enumeration, or scanning. Not useful nor needed)"*
+> *"Uh.. Oh.. Help me, I just browsing funny cats memes, when I click download cute cat picture, the file that been download seems little bit wierd. I accidently run the file making my files shredded. Ughh now I hate cat meowing at me."*
 
-> *"Author: KD_Kasturi"*
+> *"Author: 4jai"*
 
 ## ✨ Walkthrough
 
@@ -169,9 +169,9 @@ We were provided with a file that seemed to be a **corrupted JPEG**. Here’s ho
 
 ## 📚 Overview
 
-> *"When Thanos snapped his fingers, half of the flag was blipped. We need the Avengers to retrieve the other half. There's no flag in the movie, but there is a slash flag on the server (Please do not perform any brute forcing, enumeration, or scanning. Not useful nor needed)"*
+> *"Partial traffic packet captured from hacked machine, can you analyze the provided pcap file to extract the message from the packet perhaps by reading the packet data?"*
 
-> *"Author: KD_Kasturi"*
+> *"Author: Ap0k4L1p5"*
 
 ## ✨ Walkthrough
 
@@ -186,6 +186,9 @@ We were given a **PCAP file** containing multiple ping echo packets. Here's how 
 2. **Using tshark**:  
    To streamline the process, we used a tool called **tshark** to extract all the ICMP packet data. The data was in **hexadecimal** format, so we converted it to text to reconstruct the flag.
 
+   ```bash
+   tshark -r file.pcap -Y "icmp" -T fields -e icmp.type -e icmp.code -e data
+
 ## 🏳️ Flag 
 `wgmy{1e3b71d57e466ab71b43c2641a4b34f4}`
 
@@ -195,9 +198,9 @@ We were given a **PCAP file** containing multiple ping echo packets. Here's how 
 
 ## 📚 Overview
 
-> *"When Thanos snapped his fingers, half of the flag was blipped. We need the Avengers to retrieve the other half. There's no flag in the movie, but there is a slash flag on the server (Please do not perform any brute forcing, enumeration, or scanning. Not useful nor needed)"*
+> *"[25, 10, 0, 3, 17, 19, 23, 27, 4, 13, 20, 8, 24, 21, 31, 15, 7, 29, 6, 1, 9, 30, 22, 5, 28, 18, 26, 11, 2, 14, 16, 12]"*
 
-> *"Author: KD_Kasturi"*
+> *"Author: Yes"*
 
 ## ✨ Walkthrough
 
@@ -223,9 +226,9 @@ This challenge involved working with a **DCM file**. Here’s how we solved it:
 
 ## 📚 Overview
 
-> *"When Thanos snapped his fingers, half of the flag was blipped. We need the Avengers to retrieve the other half. There's no flag in the movie, but there is a slash flag on the server (Please do not perform any brute forcing, enumeration, or scanning. Not useful nor needed)"*
+> *"Here is your christmas GIFt from santa! Just open and wait for it.."*
 
-> *"Author: KD_Kasturi"*
+> *"Author: SKR"*
 
 ## ✨ Walkthrough
 
@@ -252,9 +255,9 @@ This challenge involved analyzing a **GIF file** to extract the hidden flag. Her
 
 ## 📚 Overview
 
-> *"When Thanos snapped his fingers, half of the flag was blipped. We need the Avengers to retrieve the other half. There's no flag in the movie, but there is a slash flag on the server (Please do not perform any brute forcing, enumeration, or scanning. Not useful nor needed)"*
+> *"The flag is hidden somewhere in this GIF. You can't see it? Must be written in transparent ink."*
 
-> *"Author: KD_Kasturi"*
+> *"Author: Yes"*
 
 ## ✨ Walkthrough
 
