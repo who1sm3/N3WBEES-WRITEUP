@@ -58,7 +58,7 @@ We were provided with a file that seemed to be a **corrupted JPEG**. Here’s ho
 
 4. **Final Result**:  
    After completing the process, we obtained the **correct image**, and from it, we extracted the flag.  
-   ![Final Picture](WGMY2024/Pictures/4.jpg)
+   ![Final Picture](Pictures/4.jpg)
 
 **Flag**: `wgmy{4a4be40c96ac6314e91d93f38043a634}`
 
@@ -74,7 +74,7 @@ We were given a **PCAP file** containing multiple ping echo packets. Here's how 
    After analyzing the PCAP file, we noticed numerous **ICMP ping echo packets**. By arranging the packets in the order they were captured, each packet’s data revealed a **flag character**.
 
    Here’s a snapshot of the packet data we found:
-   ![Packet Data](WGMY2024/Pictures/1.png)
+   ![Packet Data](Pictures/1.png)
 
 2. **Using tshark**:  
    To streamline the process, we used a tool called **tshark** to extract all the ICMP packet data. The data was in **hexadecimal** format, so we converted it to text to reconstruct the flag.
@@ -117,11 +117,11 @@ This challenge involved analyzing a **GIF file** to extract the hidden flag. Her
    We used **stegsolve** to analyze the GIF file's frames. There were **numerous frames** in the GIF, and we suspected the flag was hidden in the final frame.
 
    Here’s a look at the GIF frames:
-   ![GIF Frames](WGMY2024/Pictures/2.png)
+   ![GIF Frames](Pictures/2.png)
 
 2. **Locating the Flag**:  
    After navigating to the **last frame**, we found the hidden flag.  
-   ![Last Frame](WGMY2024/Pictures/3.png)
+   ![Last Frame](Pictures/3.png)
 
 **Flag**: `wgmy{1eaa6da7b7f5df6f7c0381c8f23af4d3}`
 
@@ -139,8 +139,8 @@ In this challenge, we were asked to find hidden information within a GIF. Here's
    - **Frame 2**: Additional partial flag  
 
    Here's a look at the frames:
-   ![Frame 1](WGMY2024/Pictures/6.png)
-   ![Frame 2](WGMY2024/Pictures/7.png)
+   ![Frame 1](Pictures/6.png)
+   ![Frame 2](Pictures/7.png)
 
 2. **Revealing the Flag**:  
    By applying the **random color map function** in stegsolve, portions of the flag were revealed in each frame.
@@ -148,14 +148,10 @@ In this challenge, we were asked to find hidden information within a GIF. Here's
 3. **Combining the Frames**:  
    Finally, we used the **image combiner** feature in stegsolve to merge the two frames, revealing the complete flag.
 
-   ![Combined Frames](WGMY2024/Pictures/5.png)
+   ![Combined Frames](Pictures/5.png)
 
 **Flag**: `wgmy{d41d8cd98f00b204e9800998ecf8427e}`
 
 ---
-
-### Conclusion
-
-These challenges helped me improve my skills in areas like **hex editing**, **PCAP analysis**, **steganography**, and **data extraction**. Each solution required a mix of creativity and technical analysis, making these challenges both fun and educational.  
 
 
