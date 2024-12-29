@@ -104,9 +104,15 @@ else:
 
 ---
 
-### Forensics: Unwanted Meow
+## [Forensics] Unwanted Meow
 
-### Solution:
+## 📚 Overview
+
+> *"When Thanos snapped his fingers, half of the flag was blipped. We need the Avengers to retrieve the other half. There's no flag in the movie, but there is a slash flag on the server (Please do not perform any brute forcing, enumeration, or scanning. Not useful nor needed)"*
+
+> *"Author: KD_Kasturi"*
+
+## ✨ Walkthrough
 
 We were provided with a file that seemed to be a **corrupted JPEG**. Here’s how we approached the problem:
 
@@ -154,13 +160,20 @@ We were provided with a file that seemed to be a **corrupted JPEG**. Here’s ho
    After completing the process, we obtained the **correct image**, and from it, we extracted the flag.  
    ![Final Picture](Pictures/4.jpg)
 
-**Flag**: `wgmy{4a4be40c96ac6314e91d93f38043a634}`
+## 🏳️ Flag 
+`wgmy{4a4be40c96ac6314e91d93f38043a634}`
 
 ---
 
 ### Forensics: I Can't Manipulate People
 
-### Solution:
+## 📚 Overview
+
+> *"When Thanos snapped his fingers, half of the flag was blipped. We need the Avengers to retrieve the other half. There's no flag in the movie, but there is a slash flag on the server (Please do not perform any brute forcing, enumeration, or scanning. Not useful nor needed)"*
+
+> *"Author: KD_Kasturi"*
+
+## ✨ Walkthrough
 
 We were given a **PCAP file** containing multiple ping echo packets. Here's how we solved it:
 
@@ -173,13 +186,20 @@ We were given a **PCAP file** containing multiple ping echo packets. Here's how 
 2. **Using tshark**:  
    To streamline the process, we used a tool called **tshark** to extract all the ICMP packet data. The data was in **hexadecimal** format, so we converted it to text to reconstruct the flag.
 
-**Flag**: `wgmy{1e3b71d57e466ab71b43c2641a4b34f4}`
+## 🏳️ Flag 
+`wgmy{1e3b71d57e466ab71b43c2641a4b34f4}`
 
 ---
 
 ### Misc: The DCM Meta
 
-### Solution:
+## 📚 Overview
+
+> *"When Thanos snapped his fingers, half of the flag was blipped. We need the Avengers to retrieve the other half. There's no flag in the movie, but there is a slash flag on the server (Please do not perform any brute forcing, enumeration, or scanning. Not useful nor needed)"*
+
+> *"Author: KD_Kasturi"*
+
+## ✨ Walkthrough
 
 This challenge involved working with a **DCM file**. Here’s how we solved it:
 
@@ -194,13 +214,20 @@ This challenge involved working with a **DCM file**. Here’s how we solved it:
 
    By following this logic, we were able to arrange the flag correctly.
 
-**Flag**: `wgmy{51fadeb6cc77504db336850d53623177}`
+## 🏳️ Flag 
+`wgmy{51fadeb6cc77504db336850d53623177}`
 
 ---
 
 ### Misc: Christmas GIFt
 
-### Solution:
+## 📚 Overview
+
+> *"When Thanos snapped his fingers, half of the flag was blipped. We need the Avengers to retrieve the other half. There's no flag in the movie, but there is a slash flag on the server (Please do not perform any brute forcing, enumeration, or scanning. Not useful nor needed)"*
+
+> *"Author: KD_Kasturi"*
+
+## ✨ Walkthrough
 
 This challenge involved analyzing a **GIF file** to extract the hidden flag. Here's how we solved it:
 
@@ -216,13 +243,20 @@ This challenge involved analyzing a **GIF file** to extract the hidden flag. Her
 
    ![Last Frame](Pictures/3.png)
 
-**Flag**: `wgmy{1eaa6da7b7f5df6f7c0381c8f23af4d3}`
+## 🏳️ Flag
+`wgmy{1eaa6da7b7f5df6f7c0381c8f23af4d3}`
 
 ---
 
 ### Misc: Invisible Ink
 
-### Solution:
+## 📚 Overview
+
+> *"When Thanos snapped his fingers, half of the flag was blipped. We need the Avengers to retrieve the other half. There's no flag in the movie, but there is a slash flag on the server (Please do not perform any brute forcing, enumeration, or scanning. Not useful nor needed)"*
+
+> *"Author: KD_Kasturi"*
+
+## ✨ Walkthrough
 
 In this challenge, we were asked to find hidden information within a GIF. Here's how we approached the solution:
 
@@ -245,7 +279,8 @@ In this challenge, we were asked to find hidden information within a GIF. Here's
 
    ![Combined Frames](Pictures/5.png)
 
-**Flag**: `wgmy{d41d8cd98f00b204e9800998ecf8427e}`
+## 🏳️ Flag
+`wgmy{d41d8cd98f00b204e9800998ecf8427e}`
 
 ---
 
