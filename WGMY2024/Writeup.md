@@ -32,3 +32,41 @@
    ```bash
    strings stones_binary
 
+---
+
+## 🔍 Forensic
+### Stones
+**Challenge Description:**  
+[Add the description or summarize it here.]
+
+**Solution:**  
+1. **Step 1:** [Explain the first step.]  
+   Example command:
+   ```bash
+   strings stones_binary
+
+---
+
+## 🔍 Misc
+### Stones
+**Challenge Description:**  
+[Add the description or summarize it here.]
+
+**Solution:**  
+1. **Step 1:** [Explain the first step.]  
+   Example command:
+   ```bash
+   strings stones_binary
+
+   ---
+
+## 🔍 Crypto
+### Stones
+**Challenge Description:**  
+[Add the description or summarize it here.]
+
+**Solution:**  
+1. **Step 1:** [Explain the first step.]  
+   Example command:
+   ```bash
+   strings stones_binary
