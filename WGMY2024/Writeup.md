@@ -32,10 +32,12 @@
    ```bash
    strings stones_binary
 
+**Flag:**
+
 ---
 
 ## 🔍 Forensic
-### Stones
+### Unwanted Meow
 **Challenge Description:**  
 [Add the description or summarize it here.]
 
@@ -44,11 +46,56 @@
    Example command:
    ```bash
    strings stones_binary
+
+**Flag:**
+
+
+### I Cant Manipulate People
+**Challenge Description:**  
+[Add the description or summarize it here.]
+
+**Solution:**  
+1. **Step 1:** [Explain the first step.]  
+   Example command:
+   ```bash
+   strings stones_binary
+
+**Flag:**
+
+
+---
+
+## 🔍 Crypto
+### Rick's Algorithm
+**Challenge Description:**  
+[Add the description or summarize it here.]
+
+**Solution:**  
+1. **Step 1:** [Explain the first step.]  
+   Example command:
+   ```bash
+   strings stones_binary
+
+**Flag:**
+
+
+### Credentials
+**Challenge Description:**  
+[Add the description or summarize it here.]
+
+**Solution:**  
+1. **Step 1:** [Explain the first step.]  
+   Example command:
+   ```bash
+   strings stones_binary
+
+**Flag:**
+
 
 ---
 
 ## 🔍 Misc
-### Stones
+### The DCM Meta
 **Challenge Description:**  
 [Add the description or summarize it here.]
 
@@ -58,10 +105,10 @@
    ```bash
    strings stones_binary
 
-   ---
+**Flag:**
 
-## 🔍 Crypto
-### Stones
+
+### Christmas GIFt
 **Challenge Description:**  
 [Add the description or summarize it here.]
 
@@ -70,3 +117,19 @@
    Example command:
    ```bash
    strings stones_binary
+
+**Flag:**
+
+
+### Invisible Ink
+**Challenge Description:**  
+[Add the description or summarize it here.]
+
+**Solution:**  
+1. **Step 1:** [Explain the first step.]  
+   Example command:
+   ```bash
+   strings stones_binary
+
+**Flag:**
+
