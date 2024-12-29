@@ -9,7 +9,7 @@
 1. [Reverse](#reverse)
    - [Stones](#stones)
 2. [Forensics](#forensics)
-   - [Unwanted Meow](#unwanted-meow)
+   - [Unwanted Meow](#Forensics:-Unwanted-Meow)
    - [I Can’t Manipulate People](#i-cant-manipulate-people)
 3. [Cryptography](#cryptography)
    - [Rick's Algorithm](#ricks-algorithm)
@@ -36,22 +36,48 @@
 
 ---
 
-# Forensics: Unwanted Meow
+### Forensics: Unwanted Meow
 
 ### Solution:
 
 We were provided with a file that seemed to be a **corrupted JPEG**. Here’s how we approached the problem:
 
 1. **Initial Analysis**:  
-   We first opened the given file in a **hex editor** to determine its type. It appeared to be a JPEG file, but when saved in JPEG format, the picture was **corrupted**.  
-   ![Corrupted Picture](path/to/corrupted-image.png)
+   We first opened the given file in a **hex editor** to determine its type. It appeared to be a JPEG file, but when saved in JPEG format, the picture was **corrupted**.
 
 2. **Hex Analysis**:  
    Upon further inspection of the hex file, we noticed **numerous occurrences of the word "meow"**, which was causing the corruption.  
    To resolve this, we created a script that removed all instances of "meow" from the hex data.
 
    Here’s a look at the script we used to clean the file:
-   ![Script](path/to/script-image.png)
+   ```bash
+       # Hex representation of "meow"
+    meow_hex = b'\x6D\x65\x6F\x77'
+
+    with open(input_file, 'rb') as file:
+        data = file.read()
+
+    # Remove all occurrences of the hex sequence "meow"
+    cleaned_data = data.replace(meow_hex, b'')
+
+    # Ensure the file starts with the correct SOI marker (0xFF 0xD8)
+    if not cleaned_data.startswith(b'\xFF\xD8'):
+        print("The JPEG file does not start with the correct SOI marker.")
+        return
+
+    # Ensure the file ends with the correct EOI marker (0xFF 0xD9)
+    if not cleaned_data.endswith(b'\xFF\xD9'):
+        cleaned_data += b'\xFF\xD9'
+
+    # Save the cleaned JPEG
+    with open(output_file, 'wb') as file:
+        file.write(cleaned_data)
+
+    print(f"Repaired JPEG file saved as: {output_file}")
+
+   # Example usage:
+   remove_meow_from_jpeg('flag.jpg', 'fixed_flag.jpg')
+
 
 3. **Fixing the File**:  
    The script needed to be run **twice** to ensure all instances of "meow" were removed.
@@ -64,7 +90,7 @@ We were provided with a file that seemed to be a **corrupted JPEG**. Here’s ho
 
 ---
 
-# Forensics: I Can't Manipulate People
+### Forensics: I Can't Manipulate People
 
 ### Solution:
 
@@ -83,7 +109,7 @@ We were given a **PCAP file** containing multiple ping echo packets. Here's how 
 
 ---
 
-# Misc: The DCM Meta
+### Misc: The DCM Meta
 
 ### Solution:
 
@@ -91,9 +117,6 @@ This challenge involved working with a **DCM file**. Here’s how we solved it:
 
 1. **Hex Analysis**:  
    We opened the DCM file in a **hex editor** and quickly spotted the flag within. However, the flag was **out of order**.
-
-   At first, the arrangement seemed incorrect:
-   ![Incorrect Flag Arrangement](path/to/incorrect-flag-arrangement.png)
 
 2. **Reordering**:  
    We noticed that the flag’s characters had to be arranged according to the **index sequence** provided in the question. Using **0-based indexing**, we reordered the characters correctly:
@@ -107,7 +130,7 @@ This challenge involved working with a **DCM file**. Here’s how we solved it:
 
 ---
 
-# Misc: Christmas GIFt
+### Misc: Christmas GIFt
 
 ### Solution:
 
@@ -127,7 +150,7 @@ This challenge involved analyzing a **GIF file** to extract the hidden flag. Her
 
 ---
 
-# Misc: Invisible Ink
+### Misc: Invisible Ink
 
 ### Solution:
 
