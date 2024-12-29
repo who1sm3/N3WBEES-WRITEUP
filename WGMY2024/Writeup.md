@@ -8,13 +8,13 @@
 ## 📂 Table of Contents
 1. [Reverse](#reverse)
    - [Stones](#stones)
-2. [Forensics](#forensics)
-   - [Unwanted Meow](#🕵🏻‍♀️-forensics-unwanted-meow)
+2. [🕵🏻‍♀️ Forensics](#forensics)
+   - [Unwanted Meow](#forensics-unwanted-meow)
    - [I Can’t Manipulate People](#forensics-i-cant-manipulate-people)
 3. [Cryptography](#cryptography)
    - [Rick's Algorithm](#ricks-algorithm)
    - [Credentials](#credentials)
-4. [Miscellaneous](#miscellaneous)
+4. [🧩 Miscellaneous](#miscellaneous)
    - [The DCM Meta](#misc-the-dcm-meta)
    - [Christmas GIFt](#misc-christmas-gift)
    - [Invisible Ink](#misc-invisible-ink)
@@ -36,7 +36,7 @@
 
 ---
 
-### 🕵🏻‍♀️ Forensics: Unwanted Meow
+### Forensics: Unwanted Meow
 
 ### Solution:
 
@@ -90,7 +90,7 @@ We were provided with a file that seemed to be a **corrupted JPEG**. Here’s ho
 
 ---
 
-### 🕵🏻‍♀️ Forensics: I Can't Manipulate People
+### Forensics: I Can't Manipulate People
 
 ### Solution:
 
@@ -109,7 +109,7 @@ We were given a **PCAP file** containing multiple ping echo packets. Here's how 
 
 ---
 
-### 🧩 Misc: The DCM Meta
+### Misc: The DCM Meta
 
 ### Solution:
 
@@ -130,7 +130,7 @@ This challenge involved working with a **DCM file**. Here’s how we solved it:
 
 ---
 
-### 🧩 Misc: Christmas GIFt
+### Misc: Christmas GIFt
 
 ### Solution:
 
@@ -150,7 +150,7 @@ This challenge involved analyzing a **GIF file** to extract the hidden flag. Her
 
 ---
 
-### 🧩 Misc: Invisible Ink
+### Misc: Invisible Ink
 
 ### Solution:
 
