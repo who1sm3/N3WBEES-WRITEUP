@@ -9,7 +9,7 @@
 1. [Reverse](#reverse)
    - [Stones](#stones)
 2. [Forensics](#forensics)
-   - [Unwanted Meow](#Forensics:-Unwanted-Meow)
+   - [Unwanted Meow](#forensics-unwanted-meow)
    - [I Can’t Manipulate People](#i-cant-manipulate-people)
 3. [Cryptography](#cryptography)
    - [Rick's Algorithm](#ricks-algorithm)
