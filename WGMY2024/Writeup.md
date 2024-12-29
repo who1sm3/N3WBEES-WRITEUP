@@ -140,10 +140,12 @@ This challenge involved analyzing a **GIF file** to extract the hidden flag. Her
    We used **stegsolve** to analyze the GIF file's frames. There were **numerous frames** in the GIF, and we suspected the flag was hidden in the final frame.
 
    Here’s a look at the GIF frames:
+
    ![GIF Frames](Pictures/2.png)
 
-2. **Locating the Flag**:  
+3. **Locating the Flag**:  
    After navigating to the **last frame**, we found the hidden flag.  
+
    ![Last Frame](Pictures/3.png)
 
 **Flag**: `wgmy{1eaa6da7b7f5df6f7c0381c8f23af4d3}`
