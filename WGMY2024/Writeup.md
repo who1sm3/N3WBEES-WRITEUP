@@ -1,6 +1,6 @@
 # 🚩 CTF Writeup: [Wargames.My 2024]
  
-> **Date:** [28-29]  
+> **Date:** [28-29 DECEMBER 2024]  
 > **Author:** [N3WBEES]  
 
 ---
