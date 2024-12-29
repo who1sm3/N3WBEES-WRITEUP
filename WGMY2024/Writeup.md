@@ -6,7 +6,7 @@
 ---
 
 # 📂 Table of Contents
-1. [Reverse](#reverse)
+1. [🔧 Reverse](#reverse)
    - [Stones](#rev-stones)
 2. [🕵🏻‍♀️ Forensics](#forensics)
    - [Unwanted Meow](#forensics-unwanted-meow)
@@ -15,7 +15,7 @@
    - [The DCM Meta](#misc-the-dcm-meta)
    - [Christmas GIFt](#misc-christmas-gift)
    - [Invisible Ink](#misc-invisible-ink)
-4. [Cryptography](#cryptography)
+4. [🔢 Cryptography](#cryptography)
    - [Rick's Algorithm](#ricks-algorithm)
    - [Credentials](#credentials)
 
