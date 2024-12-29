@@ -7,7 +7,7 @@
 
 # 📂 Table of Contents
 1. [Reverse](#reverse)
-   - [Stones](#stones)
+   - [Stones](#rev-stones)
 2. [🕵🏻‍♀️ Forensics](#forensics)
    - [Unwanted Meow](#forensics-unwanted-meow)
    - [I Can’t Manipulate People](#forensics-i-cant-manipulate-people)
