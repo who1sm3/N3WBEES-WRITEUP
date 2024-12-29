@@ -164,13 +164,15 @@ In this challenge, we were asked to find hidden information within a GIF. Here's
    - **Frame 2**: Additional partial flag  
 
    Here's a look at the frames:
+   
    ![Frame 1](Pictures/6.png)
+   
    ![Frame 2](Pictures/7.png)
 
-2. **Revealing the Flag**:  
+3. **Revealing the Flag**:  
    By applying the **random color map function** in stegsolve, portions of the flag were revealed in each frame.
 
-3. **Combining the Frames**:  
+4. **Combining the Frames**:  
    Finally, we used the **image combiner** feature in stegsolve to merge the two frames, revealing the complete flag.
 
    ![Combined Frames](Pictures/5.png)
