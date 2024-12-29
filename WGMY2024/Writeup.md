@@ -6,16 +6,16 @@
 ---
 
 # 📂 Table of Contents
-1. [🔧 Reverse](#reverse)
+1. [🔧 Reverse]
    - [Stones](#rev-stones)
-2. [🕵🏻‍♀️ Forensics](#forensics)
+2. [🕵🏻‍♀️ Forensics]
    - [Unwanted Meow](#forensics-unwanted-meow)
    - [I Can’t Manipulate People](#forensics-i-cant-manipulate-people)
-3. [🧩 Miscellaneous](#miscellaneous)
+3. [🧩 Miscellaneous]
    - [The DCM Meta](#misc-the-dcm-meta)
    - [Christmas GIFt](#misc-christmas-gift)
    - [Invisible Ink](#misc-invisible-ink)
-4. [🔢 Cryptography](#cryptography)
+4. [🔢 Cryptography]
    - [Rick's Algorithm](#ricks-algorithm)
    - [Credentials](#credentials)
 
