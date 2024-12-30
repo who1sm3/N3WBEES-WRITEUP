@@ -287,4 +287,100 @@ In this challenge, we were asked to find hidden information within a GIF. Here's
 
 ---
 
+# [Crypto] Rick's Algorithm
 
+## 📚 Overview
+In this challenge, we are tasked with retrieving the flag by analyzing the encryption and decryption processes in an RSA-based system. The provided `server.py` script introduces two conditions that restrict straightforward decryption:
+1. `c % pow(flag, e, n) == 0`
+2. `flag % pow(c, d, n) == 0`
+
+These conditions prevent direct decryption of the encrypted flag. We will perform **Chosen Plaintext Attack (CPA)** and **Chosen Ciphertext Attack (CCA)** to bypass these restrictions and extract the flag.
+
+---
+
+## ✨ Walkthrough
+
+### Step 1: Analyze the Encryption Process
+The provided `server.py` code outlines the RSA encryption process. After carefully reading the code, we can see the following:
+- **Encryption Formula**:  
+  \( C = M^e \mod n \)  
+- **Decryption Formula**:  
+  \( M = C^d \mod n \)  
+
+The first condition restricts inserting the encrypted flag into the decryption oracle. The second condition breaks the decryption process if `flag % decrypted flag == 0`.
+
+### Step 2: Perform Chosen Plaintext Attack (CPA)
+Using the RSA multiplicative properties, we can determine the modulus \( n \). The steps are:
+1. Choose two plaintext values \( M_1 \) and \( M_2 \) (e.g., `'!'` and `'B'`).
+2. Compute the ciphertext values \( C_1 \) and \( C_2 \) using the encryption oracle.
+3. Calculate \( n \) using the formula:  
+   \[
+   n = GCD(C_i - M_i^e, C_{i+1} - M_{i+1}^e)
+   \]
+
+### Step 3: Interfering with Decryption Conditions
+We attempt to bypass the conditions:
+- Add \( n \) to the encrypted flag value:
+  \[
+  \text{new encrypted flag} = \text{encrypted flag} + n
+  \]
+- Break the first condition:  
+  \[
+  \text{new encrypted flag} \% pow(flag, e, n) \neq 0
+  \]
+However, this method does not break the second condition:  
+\[
+flag \% pow(new encrypted flag, d, n) = 0
+\]
+
+### Step 4: Perform Chosen Ciphertext Attack (CCA)
+To bypass both conditions, we use **CCA (Chosen Ciphertext Attack)** as follows:
+1. Select a random value \( r \) co-prime to \( n \).
+2. Compute a new ciphertext \( C' \) using:
+   \[
+   C' = C \cdot r^e \mod n
+   \]
+3. Send \( C' \) to the decryption oracle to get \( M' \):  
+   \[
+   M' = C'^d \mod n = (C^d \cdot r) \mod n = (M \cdot r) \mod n
+   \]
+4. Calculate \( M \) (the flag) using the modular inverse:
+   \[
+   M = M' \cdot r^{-1} \mod n
+   \]
+
+---
+
+## 🏳️ Flag
+`wgmy{ce7a475ff0e122e6ac34c3765449f71d}`
+
+---
+
+# [Crypto] Credentials
+
+## 📚 Overview
+
+> *"We found a leak of a blackmarket website's login credentials. Can you find the password of the user osman and successfully decrypt it?"*
+
+> *"Author: Alhfs"*
+
+---
+
+## ✨ Walkthrough
+
+1. **Locate osman’s credentials**:  
+   Upon inspecting the files, we find that **osman’s username is on line 337** in `user.txt`. Based on typical formats, **osman’s password is likely on the same line (337)** in `passwd.txt`.
+
+2. **Identify the encryption algorithm**:  
+   After extracting the ciphertext from the relevant line in `passwd.txt`, we determine it uses a **shift cipher algorithm**.
+
+3. **Decrypt the ciphertext**:  
+   Using an online cipher decryption tool, such as [dCode](https://www.dcode.fr/), we decrypt the ciphertext.  
+   During the process, we look for the flag format `wgmy{flag_here}` to confirm the correct decryption.
+
+---
+
+## 🏳️ Flag
+`WGMY{b6d180d9c302d8a8daad1f2174a0b212}`
+
+---
