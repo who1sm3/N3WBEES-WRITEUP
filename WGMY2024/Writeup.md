@@ -16,8 +16,8 @@
    - [Christmas GIFt](#misc-christmas-gift)
    - [Invisible Ink](#misc-invisible-ink)
 4. 🔢 **Cryptography**
-   - [Rick's Algorithm](#ricks-algorithm)
-   - [Credentials](#credentials)
+   - [Rick's Algorithm](#crypto-ricks-algorithm)
+   - [Credentials](#crypto-credentials)
 
 ---
 
@@ -287,14 +287,13 @@ In this challenge, we were asked to find hidden information within a GIF. Here's
 
 ---
 
-# [Crypto] Rick's Algorithm
+## [Crypto] Rick's Algorithm
 
 ## 📚 Overview
-In this challenge, we are tasked with retrieving the flag by analyzing the encryption and decryption processes in an RSA-based system. The provided `server.py` script introduces two conditions that restrict straightforward decryption:
-1. `c % pow(flag, e, n) == 0`
-2. `flag % pow(c, d, n) == 0`
 
-These conditions prevent direct decryption of the encrypted flag. We will perform **Chosen Plaintext Attack (CPA)** and **Chosen Ciphertext Attack (CCA)** to bypass these restrictions and extract the flag.
+> *"My friend Rick designed an alogrithm that is super secure! Feel free to try it!"*
+
+> *"Author: SKR"*
 
 ---
 
@@ -356,7 +355,7 @@ To bypass both conditions, we use **CCA (Chosen Ciphertext Attack)** as follows:
 
 ---
 
-# [Crypto] Credentials
+## [Crypto] Credentials
 
 ## 📚 Overview
 
